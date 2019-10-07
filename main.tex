@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[toc,page]{appendix}
 \usepackage[catalan]{babel}
+\usepackage[pdftex]{hyperref}
 
 %\title{Taller d'introducció al terminal de Linux}
 %\author{Joan Vinyals - LinuxUPC}
@@ -9,16 +10,18 @@
 
 \begin{document}
 
-\input{titlepage.tex}
-%
-\input{introduccio.tex}
+\include{titlepage}
 
-\input{estructura.tex}
+\include{tableofcontents}
 
-\input{fonts_informacio.tex}
+\include{introduccio}
 
-\input{shell.tex}
+\include{estructura}
 
-\input{apendix.tex}
+\include{fonts_informacio}
+
+\include{shell}
+
+\include{apendix}
 
 \end{document}
